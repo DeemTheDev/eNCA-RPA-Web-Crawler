@@ -1,0 +1,6 @@
+{
+    "python.terminal.activateEnvironment": false,
+    "python.analysis.extraPaths": [
+        "/Users/deemthedev/Desktop/myFiles/Python/PROJECTS/eNCA-WEB-SPIDER/eNCA-RPA-Web-Crawler/."
+    ]
+}

@@ -1,0 +1,1575 @@
+V 0.0.4
+T 2024-04-22T19:51:47.414+00:00
+ID 1|c0ce186c-00e1-11ef-9ea2-c4b301cc5893
+I "sys.platform=darwin"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:39:40) [Clang 15.0.7 ]"
+M a:"tasks.py"
+SR a|0.009
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.009
+M f:"regular"
+M g:"\nCollecting tasks from: tasks.py\n"
+C f|g|0.011
+M h:"stderr"
+M i:"2024-04-22 21:51:51,154 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.\n"
+C h|i|3.74
+M j:"PASS"
+ET j|e|7.954
+M l:"main"
+M m:"tasks"
+M n:"/Users/deemthedev/Desktop/myFiles/Python/PROJECTS/eNCA-WEB-SPIDER/eNCA-RPA-Web-Crawler/tasks.py"
+M o:null
+P k:l|m|n|o|178
+ST k|7.955
+M p:"================================ "
+C f|p|7.955
+M q:"Running: "
+C f|q|7.955
+M r:"task_name"
+C r|l|7.955
+M s:" =================================\n"
+C f|s|7.957
+M t:"METHOD"
+SE k|t|7.958
+M v:"Robot_exe.__init__"
+P u:v|m|n|e|12
+SE u|t|7.959
+M w:"website"
+M x:"str"
+M y:"'https://www.enca.com/'"
+EA w|x|y
+EE t|j|7.959
+P z:l|m|n|e|179
+M A:"run"
+M B:"Robot_exe"
+M C:"<tasks.Robot_exe object at 0x101f56620>"
+AS z|A|B|C|7.959
+P D:l|m|n|e|181
+M E:"search_phrase"
+M F:"'Injured'"
+AS D|E|x|F|7.96
+M H:"Robot_exe.open_browser"
+P G:H|m|n|e|36
+SE G|t|7.96
+EA E|x|F
+M J:"Selenium.__init__"
+M K:"RPA.Browser.Selenium"
+M L:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/RPA/Browser/Selenium.py"
+P I:J|K|L|e|241
+SE I|t|7.96
+M M:"args"
+M N:"tuple"
+M O:"()"
+EA M|N|O
+M P:"kwargs"
+M Q:"dict"
+M R:"{}"
+EA P|Q|R
+EE t|j|8.077
+M T:"wrapper"
+M U:"RPA.Browser.common"
+M V:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/RPA/Browser/common.py"
+P S:T|U|V|e|33
+SE S|t|8.077
+M W:"(<RPA.Browser.Selenium.Selenium object at 0x101f56230>, 'https://www.enca.com/')"
+EA M|N|W
+EA P|Q|R
+P X:T|U|V|e|36
+M Y:"int"
+M Z:"1"
+R X|Y|Z|11.868
+EE t|j|11.872
+M 2:"WaitingKeywords.wait_until_element_is_visible"
+M 3:"SeleniumLibrary.keywords.waiting"
+M 4:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/SeleniumLibrary/keywords/waiting.py"
+P 0:2|3|4|e|299
+SE 0|t|11.872
+M 5:"locator"
+M 6:"'name:search'"
+EA 5|x|6
+M 7:"timeout"
+M 8:"4"
+EA 7|Y|8
+M 9:"error"
+M aa:"NoneType"
+M ab:"None"
+EA 9|aa|ab
+EE t|j|16.465
+M ad:"FormElementKeywords.input_text"
+M ae:"SeleniumLibrary.keywords.formelement"
+M af:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/SeleniumLibrary/keywords/formelement.py"
+P ac:ad|ae|af|e|272
+SE ac|t|16.467
+EA 5|x|6
+M ag:"text"
+M ah:"'Injured\\ue007'"
+EA ag|x|ah
+M ai:"clear"
+M aj:"bool"
+M ak:"True"
+EA ai|aj|ak
+EE t|j|19.633
+M am:"SeleniumLibrary.find_elements"
+M an:"SeleniumLibrary"
+M ao:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/SeleniumLibrary/__init__.py"
+P al:am|an|ao|e|612
+SE al|t|19.636
+M ap:"'css:view-unformatted'"
+EA 5|x|ap
+M aq:"parent"
+EA aq|aa|ab
+P ar:am|an|ao|e|626
+M as:"list"
+M at:"[]"
+R ar|as|at|19.657
+EE t|j|19.657
+M av:"if self.browser.find_elements('css:view-unformatted') != None"
+P au:av|m|n|e|63
+M aw:"IF_SCOPE"
+SE au|aw|19.657
+SE 0|t|19.657
+M ax:"'css:.view-unformatted'"
+EA 5|x|ax
+M ay:"2"
+EA 7|Y|ay
+EA 9|aa|ab
+EE t|j|19.682
+EE aw|j|19.682
+EE t|j|19.682
+M aA:"Robot_exe.extract_web_data"
+P az:aA|m|n|e|79
+SE az|t|19.683
+SE al|t|19.683
+M aB:"'css:.card_heading'"
+EA 5|x|aB
+EA aq|aa|ab
+M aC:"[<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.79\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.80\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.81\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.82\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.83\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.84\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.85\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.86\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.87\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.88\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.89\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.90\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.91\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.92\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.93\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.94\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.95\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.96\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.97\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.98\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.99\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.100\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.101\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.102\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.103\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.104\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.105\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.106\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.107\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.108\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.109\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.110\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.111\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.112\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.113\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.114\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.115\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.116\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.117\")>]"
+R ar|as|aC|19.7
+EE t|j|19.7
+P aD:aA|m|n|e|82
+M aE:"titles_url"
+AS aD|aE|as|aC|19.7
+M aG:"for titles in titles_url"
+P aF:aG|m|n|e|84
+M aH:"FOR"
+SE aF|aH|19.7
+M aJ:"Step: for titles in titles_url"
+P aI:aJ|m|n|e|84
+M aK:"FOR_STEP"
+SE aI|aK|19.701
+M aL:"titles"
+M aM:"WebElement"
+M aN:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.79\")>"
+EA aL|aM|aN
+M aP:"ElementKeywords.get_text"
+M aQ:"SeleniumLibrary.keywords.element"
+M aR:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/SeleniumLibrary/keywords/element.py"
+P aO:aP|aQ|aR|e|514
+SE aO|t|19.701
+EA 5|aM|aN
+P aS:aP|aQ|aR|e|520
+M aT:"''"
+R aS|x|aT|19.717
+EE t|j|19.717
+EE aK|j|19.717
+SE aI|aK|19.717
+M aU:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.80\")>"
+EA aL|aM|aU
+SE aO|t|19.717
+EA 5|aM|aU
+R aS|x|aT|19.729
+EE t|j|19.73
+EE aK|j|19.73
+SE aI|aK|19.73
+M aV:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.81\")>"
+EA aL|aM|aV
+SE aO|t|19.73
+EA 5|aM|aV
+R aS|x|aT|19.741
+EE t|j|19.741
+EE aK|j|19.741
+SE aI|aK|19.741
+M aW:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.82\")>"
+EA aL|aM|aW
+SE aO|t|19.742
+EA 5|aM|aW
+R aS|x|aT|19.751
+EE t|j|19.751
+EE aK|j|19.751
+SE aI|aK|19.751
+M aX:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.83\")>"
+EA aL|aM|aX
+SE aO|t|19.752
+EA 5|aM|aX
+R aS|x|aT|19.765
+EE t|j|19.765
+EE aK|j|19.765
+SE aI|aK|19.765
+M aY:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.84\")>"
+EA aL|aM|aY
+SE aO|t|19.765
+EA 5|aM|aY
+M aZ:"'Trinity International Bible University bogus - Higher Education Dept'"
+R aS|x|aZ|19.786
+EE t|j|19.786
+EE aK|j|19.786
+SE aI|aK|19.786
+M a0:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.85\")>"
+EA aL|aM|a0
+SE aO|t|19.786
+EA 5|aM|a0
+M a1:"'WATCH | Discussion | Celebrating Earth Day'"
+R aS|x|a1|19.816
+EE t|j|19.816
+EE aK|j|19.816
+SE aI|aK|19.816
+M a2:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.86\")>"
+EA aL|aM|a2
+SE aO|t|19.817
+EA 5|aM|a2
+M a3:"\"WATCH | PSA comments on govt's salary expenditure\""
+R aS|x|a3|19.843
+EE t|j|19.844
+EE aK|j|19.844
+SE aI|aK|19.844
+M a4:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.87\")>"
+EA aL|aM|a4
+SE aO|t|19.845
+EA 5|aM|a4
+M a5:"'WATCH | Meyiwa trial continues'"
+R aS|x|a5|19.865
+EE t|j|19.866
+EE aK|j|19.866
+SE aI|aK|19.866
+M a6:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.88\")>"
+EA aL|aM|a6
+SE aO|t|19.867
+EA 5|aM|a6
+M a7:"'Lesufi hopes for sole mandate in Gauteng ahead of elections'"
+R aS|x|a7|19.885
+EE t|j|19.886
+EE aK|j|19.886
+SE aI|aK|19.886
+M a8:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.89\")>"
+EA aL|aM|a8
+SE aO|t|19.887
+EA 5|aM|a8
+R aS|x|aT|19.901
+EE t|j|19.903
+EE aK|j|19.906
+SE aI|aK|19.906
+M a9:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.90\")>"
+EA aL|aM|a9
+SE aO|t|19.906
+EA 5|aM|a9
+R aS|x|aT|19.924
+EE t|j|19.924
+EE aK|j|19.925
+SE aI|aK|19.925
+M ba:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.91\")>"
+EA aL|aM|ba
+SE aO|t|19.925
+EA 5|aM|ba
+R aS|x|aT|19.935
+EE t|j|19.935
+EE aK|j|19.936
+SE aI|aK|19.936
+M bb:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.92\")>"
+EA aL|aM|bb
+SE aO|t|19.937
+EA 5|aM|bb
+R aS|x|aT|19.947
+EE t|j|19.947
+EE aK|j|19.948
+SE aI|aK|19.948
+M bc:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.93\")>"
+EA aL|aM|bc
+SE aO|t|19.948
+EA 5|aM|bc
+R aS|x|aT|19.963
+EE t|j|19.963
+EE aK|j|19.964
+SE aI|aK|19.964
+M bd:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.94\")>"
+EA aL|aM|bd
+SE aO|t|19.964
+EA 5|aM|bd
+R aS|x|aT|20.005
+EE t|j|20.005
+EE aK|j|20.005
+SE aI|aK|20.005
+M be:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.95\")>"
+EA aL|aM|be
+SE aO|t|20.006
+EA 5|aM|be
+R aS|x|aT|20.016
+EE t|j|20.016
+EE aK|j|20.016
+SE aI|aK|20.017
+M bf:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.96\")>"
+EA aL|aM|bf
+SE aO|t|20.017
+EA 5|aM|bf
+R aS|x|aT|20.036
+EE t|j|20.036
+EE aK|j|20.037
+SE aI|aK|20.037
+M bg:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.97\")>"
+EA aL|aM|bg
+SE aO|t|20.038
+EA 5|aM|bg
+R aS|x|aT|20.047
+EE t|j|20.047
+EE aK|j|20.048
+SE aI|aK|20.049
+M bh:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.98\")>"
+EA aL|aM|bh
+SE aO|t|20.049
+EA 5|aM|bh
+R aS|x|aT|20.06
+EE t|j|20.06
+EE aK|j|20.06
+SE aI|aK|20.06
+M bi:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.99\")>"
+EA aL|aM|bi
+SE aO|t|20.061
+EA 5|aM|bi
+R aS|x|aT|20.076
+EE t|j|20.076
+EE aK|j|20.076
+SE aI|aK|20.076
+M bj:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.100\")>"
+EA aL|aM|bj
+SE aO|t|20.076
+EA 5|aM|bj
+R aS|x|aT|20.09
+EE t|j|20.09
+EE aK|j|20.09
+SE aI|aK|20.09
+M bk:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.101\")>"
+EA aL|aM|bk
+SE aO|t|20.091
+EA 5|aM|bk
+R aS|x|aT|20.137
+EE t|j|20.137
+EE aK|j|20.138
+SE aI|aK|20.138
+M bl:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.102\")>"
+EA aL|aM|bl
+SE aO|t|20.139
+EA 5|aM|bl
+R aS|x|aT|20.159
+EE t|j|20.159
+EE aK|j|20.159
+SE aI|aK|20.16
+M bm:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.103\")>"
+EA aL|aM|bm
+SE aO|t|20.16
+EA 5|aM|bm
+R aS|x|aT|20.173
+EE t|j|20.173
+EE aK|j|20.173
+SE aI|aK|20.173
+M bn:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.104\")>"
+EA aL|aM|bn
+SE aO|t|20.173
+EA 5|aM|bn
+R aS|x|aT|20.184
+EE t|j|20.184
+EE aK|j|20.184
+SE aI|aK|20.185
+M bo:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.105\")>"
+EA aL|aM|bo
+SE aO|t|20.185
+EA 5|aM|bo
+R aS|x|aT|20.198
+EE t|j|20.198
+EE aK|j|20.199
+SE aI|aK|20.199
+M bp:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.106\")>"
+EA aL|aM|bp
+SE aO|t|20.199
+EA 5|aM|bp
+R aS|x|aT|20.212
+EE t|j|20.215
+EE aK|j|20.215
+SE aI|aK|20.215
+M bq:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.107\")>"
+EA aL|aM|bq
+SE aO|t|20.215
+EA 5|aM|bq
+R aS|x|aT|20.277
+EE t|j|20.277
+EE aK|j|20.277
+SE aI|aK|20.277
+M br:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.108\")>"
+EA aL|aM|br
+SE aO|t|20.278
+EA 5|aM|br
+M bs:"'Finnish footbridge collapse injures 27, mostly children'"
+R aS|x|bs|20.286
+EE t|j|20.286
+EE aK|j|20.286
+SE aI|aK|20.286
+M bt:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.109\")>"
+EA aL|aM|bt
+SE aO|t|20.287
+EA 5|aM|bt
+M bu:"\"Injured North out of Wales' Six Nations opener against Scotland\""
+R aS|x|bu|20.295
+EE t|j|20.295
+EE aK|j|20.295
+SE aI|aK|20.295
+M bv:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.110\")>"
+EA aL|aM|bv
+SE aO|t|20.296
+EA 5|aM|bv
+M bw:"'Three dead, over 270 injured in huge fire in Nairobi'"
+R aS|x|bw|20.305
+EE t|j|20.305
+EE aK|j|20.305
+SE aI|aK|20.305
+M bx:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.111\")>"
+EA aL|aM|bx
+SE aO|t|20.305
+EA 5|aM|bx
+M by:"'Bus crashes into Montreal day care, seriously injuring children'"
+R aS|x|by|20.314
+EE t|j|20.314
+EE aK|j|20.314
+SE aI|aK|20.314
+M bz:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.112\")>"
+EA aL|aM|bz
+SE aO|t|20.314
+EA 5|aM|bz
+M bA:"'Frizell joins injured list as All Blacks depart for Rugby World Cup'"
+R aS|x|bA|20.323
+EE t|j|20.323
+EE aK|j|20.323
+SE aI|aK|20.323
+M bB:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.113\")>"
+EA aL|aM|bB
+SE aO|t|20.323
+EA 5|aM|bB
+M bC:"'Australia include injured quartet in ODI World Cup squad'"
+R aS|x|bC|20.332
+EE t|j|20.332
+EE aK|j|20.332
+SE aI|aK|20.332
+M bD:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.114\")>"
+EA aL|aM|bD
+SE aO|t|20.332
+EA 5|aM|bD
+M bE:"'Injured Springbok Marx to miss Japanese club season'"
+R aS|x|bE|20.341
+EE t|j|20.341
+EE aK|j|20.341
+SE aI|aK|20.341
+M bF:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.115\")>"
+EA aL|aM|bF
+SE aO|t|20.342
+EA 5|aM|bF
+M bG:"'More than 40 dead, hundreds injured in Indonesia quake'"
+R aS|x|bG|20.351
+EE t|j|20.351
+EE aK|j|20.351
+SE aI|aK|20.351
+M bH:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.116\")>"
+EA aL|aM|bH
+SE aO|t|20.351
+EA 5|aM|bH
+M bI:"'PSG lose injured Mbappe for first leg of Bayern Champions League tie'"
+R aS|x|bI|20.359
+EE t|j|20.36
+EE aK|j|20.36
+SE aI|aK|20.36
+M bJ:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.117\")>"
+EA aL|aM|bJ
+SE aO|t|20.36
+EA 5|aM|bJ
+M bK:"'Seven killed, several injured in KZN crash'"
+R aS|x|bK|20.369
+EE t|j|20.369
+EE aK|j|20.369
+EE aH|j|20.369
+SE al|t|20.369
+M bL:"'css:.blurb'"
+EA 5|x|bL
+EA aq|aa|ab
+M bM:"[<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.119\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.120\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.121\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.122\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.123\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.124\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.125\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.126\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.127\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.128\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.129\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.130\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.131\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.132\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.133\")>]"
+R ar|as|bM|20.379
+EE t|j|20.379
+P bN:aA|m|n|e|92
+M bO:"description_url"
+AS bN|bO|as|bM|20.38
+M bQ:"for description in description_url"
+P bP:bQ|m|n|e|94
+SE bP|aH|20.38
+M bS:"Step: for description in description_url"
+P bR:bS|m|n|e|94
+SE bR|aK|20.38
+M bT:"description"
+M bU:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.119\")>"
+EA bT|aM|bU
+SE aO|t|20.381
+EA 5|aM|bU
+M bV:"'Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...'"
+R aS|x|bV|20.389
+EE t|j|20.389
+EE aK|j|20.389
+SE bR|aK|20.389
+M bW:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.120\")>"
+EA bT|aM|bW
+SE aO|t|20.389
+EA 5|aM|bW
+R aS|x|bV|20.397
+EE t|j|20.397
+EE aK|j|20.397
+SE bR|aK|20.398
+M bX:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.121\")>"
+EA bT|aM|bX
+SE aO|t|20.398
+EA 5|aM|bX
+R aS|x|aT|20.406
+EE t|j|20.406
+EE aK|j|20.406
+SE bR|aK|20.406
+M bY:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.122\")>"
+EA bT|aM|bY
+SE aO|t|20.406
+EA 5|aM|bY
+R aS|x|aT|20.413
+EE t|j|20.414
+EE aK|j|20.414
+SE bR|aK|20.414
+M bZ:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.123\")>"
+EA bT|aM|bZ
+SE aO|t|20.414
+EA 5|aM|bZ
+M b0:"'A bus crashed into a Montreal daycare center on Wednesday.'"
+R aS|x|b0|20.422
+EE t|j|20.422
+EE aK|j|20.422
+SE bR|aK|20.422
+M b1:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.124\")>"
+EA bT|aM|b1
+SE aO|t|20.423
+EA 5|aM|b1
+R aS|x|b0|20.433
+EE t|j|20.433
+EE aK|j|20.433
+SE bR|aK|20.434
+M b2:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.125\")>"
+EA bT|aM|b2
+SE aO|t|20.434
+EA 5|aM|b2
+R aS|x|aT|20.441
+EE t|j|20.441
+EE aK|j|20.441
+SE bR|aK|20.442
+M b3:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.126\")>"
+EA bT|aM|b3
+SE aO|t|20.442
+EA 5|aM|b3
+R aS|x|aT|20.449
+EE t|j|20.449
+EE aK|j|20.449
+SE bR|aK|20.449
+M b4:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.127\")>"
+EA bT|aM|b4
+SE aO|t|20.449
+EA 5|aM|b4
+R aS|x|aT|20.456
+EE t|j|20.456
+EE aK|j|20.456
+SE bR|aK|20.457
+M b5:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.128\")>"
+EA bT|aM|b5
+SE aO|t|20.457
+EA 5|aM|b5
+M b6:"\"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\""
+R aS|x|b6|20.464
+EE t|j|20.465
+EE aK|j|20.465
+SE bR|aK|20.465
+M b7:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.129\")>"
+EA bT|aM|b7
+SE aO|t|20.465
+EA 5|aM|b7
+R aS|x|b6|20.473
+EE t|j|20.473
+EE aK|j|20.473
+SE bR|aK|20.473
+M b8:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.130\")>"
+EA bT|aM|b8
+SE aO|t|20.474
+EA 5|aM|b8
+M b9:"\"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\""
+R aS|x|b9|20.482
+EE t|j|20.482
+EE aK|j|20.482
+SE bR|aK|20.482
+M ca:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.131\")>"
+EA bT|aM|ca
+SE aO|t|20.482
+EA 5|aM|ca
+R aS|x|b9|20.49
+EE t|j|20.491
+EE aK|j|20.491
+SE bR|aK|20.491
+M cb:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.132\")>"
+EA bT|aM|cb
+SE aO|t|20.491
+EA 5|aM|cb
+M cc:"'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.'"
+R aS|x|cc|20.499
+EE t|j|20.499
+EE aK|j|20.5
+SE bR|aK|20.5
+M cd:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.133\")>"
+EA bT|aM|cd
+SE aO|t|20.5
+EA 5|aM|cd
+R aS|x|cc|20.508
+EE t|j|20.508
+EE aK|j|20.508
+EE aH|j|20.508
+SE al|t|20.508
+M ce:"'css:.published-date'"
+EA 5|x|ce
+EA aq|aa|ab
+M cf:"[<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.134\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.135\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.136\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.137\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.138\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.139\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.140\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.141\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.142\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.143\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.144\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.145\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.146\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.147\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.148\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.149\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.150\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.151\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.152\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.153\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.154\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.155\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.156\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.157\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.158\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.159\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.160\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.161\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.162\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.163\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.164\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.165\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.166\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.167\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.168\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.169\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.170\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.171\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.172\")>]"
+R ar|as|cf|20.521
+EE t|j|20.521
+P cg:aA|m|n|e|103
+M ch:"dates_url"
+AS cg|ch|as|cf|20.521
+M cj:"for dates in dates_url"
+P ci:cj|m|n|e|105
+SE ci|aH|20.522
+M cl:"Step: for dates in dates_url"
+P ck:cl|m|n|e|105
+SE ck|aK|20.522
+M cm:"dates"
+M cn:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.134\")>"
+EA cm|aM|cn
+SE aO|t|20.522
+EA 5|aM|cn
+R aS|x|aT|20.53
+EE t|j|20.53
+EE aK|j|20.53
+SE ck|aK|20.531
+M co:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.135\")>"
+EA cm|aM|co
+SE aO|t|20.531
+EA 5|aM|co
+R aS|x|aT|20.539
+EE t|j|20.539
+EE aK|j|20.539
+SE ck|aK|20.539
+M cp:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.136\")>"
+EA cm|aM|cp
+SE aO|t|20.539
+EA 5|aM|cp
+R aS|x|aT|20.547
+EE t|j|20.547
+EE aK|j|20.547
+SE ck|aK|20.547
+M cq:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.137\")>"
+EA cm|aM|cq
+SE aO|t|20.547
+EA 5|aM|cq
+R aS|x|aT|20.555
+EE t|j|20.555
+EE aK|j|20.555
+SE ck|aK|20.555
+M cr:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.138\")>"
+EA cm|aM|cr
+SE aO|t|20.555
+EA 5|aM|cr
+R aS|x|aT|20.562
+EE t|j|20.562
+EE aK|j|20.562
+SE ck|aK|20.562
+M cs:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.139\")>"
+EA cm|aM|cs
+SE aO|t|20.562
+EA 5|aM|cs
+M ct:"'. ago'"
+R aS|x|ct|20.57
+EE t|j|20.57
+EE aK|j|20.57
+SE ck|aK|20.57
+M cu:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.140\")>"
+EA cm|aM|cu
+SE aO|t|20.57
+EA 5|aM|cu
+M cv:"'9 minutes ago'"
+R aS|x|cv|20.578
+EE t|j|20.578
+EE aK|j|20.578
+SE ck|aK|20.578
+M cw:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.141\")>"
+EA cm|aM|cw
+SE aO|t|20.578
+EA 5|aM|cw
+M cx:"'18 minutes ago'"
+R aS|x|cx|20.586
+EE t|j|20.586
+EE aK|j|20.586
+SE ck|aK|20.586
+M cy:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.142\")>"
+EA cm|aM|cy
+SE aO|t|20.587
+EA 5|aM|cy
+M cz:"'6 hours ago'"
+R aS|x|cz|20.594
+EE t|j|20.594
+EE aK|j|20.594
+SE ck|aK|20.594
+M cA:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.143\")>"
+EA cm|aM|cA
+SE aO|t|20.595
+EA 5|aM|cA
+M cB:"'8 hours ago'"
+R aS|x|cB|20.602
+EE t|j|20.602
+EE aK|j|20.602
+SE ck|aK|20.602
+M cC:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.144\")>"
+EA cm|aM|cC
+SE aO|t|20.603
+EA 5|aM|cC
+R aS|x|aT|20.61
+EE t|j|20.61
+EE aK|j|20.61
+SE ck|aK|20.61
+M cD:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.145\")>"
+EA cm|aM|cD
+SE aO|t|20.61
+EA 5|aM|cD
+R aS|x|aT|20.618
+EE t|j|20.618
+EE aK|j|20.618
+SE ck|aK|20.618
+M cE:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.146\")>"
+EA cm|aM|cE
+SE aO|t|20.618
+EA 5|aM|cE
+R aS|x|aT|20.626
+EE t|j|20.626
+EE aK|j|20.626
+SE ck|aK|20.626
+M cF:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.147\")>"
+EA cm|aM|cF
+SE aO|t|20.626
+EA 5|aM|cF
+R aS|x|aT|20.634
+EE t|j|20.634
+EE aK|j|20.634
+SE ck|aK|20.634
+M cG:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.148\")>"
+EA cm|aM|cG
+SE aO|t|20.634
+EA 5|aM|cG
+R aS|x|aT|20.642
+EE t|j|20.642
+EE aK|j|20.642
+SE ck|aK|20.642
+M cH:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.149\")>"
+EA cm|aM|cH
+SE aO|t|20.642
+EA 5|aM|cH
+R aS|x|aT|20.651
+EE t|j|20.651
+EE aK|j|20.651
+SE ck|aK|20.652
+M cI:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.150\")>"
+EA cm|aM|cI
+SE aO|t|20.652
+EA 5|aM|cI
+R aS|x|aT|20.659
+EE t|j|20.659
+EE aK|j|20.659
+SE ck|aK|20.66
+M cJ:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.151\")>"
+EA cm|aM|cJ
+SE aO|t|20.66
+EA 5|aM|cJ
+R aS|x|aT|20.667
+EE t|j|20.667
+EE aK|j|20.667
+SE ck|aK|20.668
+M cK:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.152\")>"
+EA cm|aM|cK
+SE aO|t|20.668
+EA 5|aM|cK
+R aS|x|aT|20.675
+EE t|j|20.675
+EE aK|j|20.675
+SE ck|aK|20.675
+M cL:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.153\")>"
+EA cm|aM|cL
+SE aO|t|20.675
+EA 5|aM|cL
+R aS|x|aT|20.682
+EE t|j|20.683
+EE aK|j|20.683
+SE ck|aK|20.683
+M cM:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.154\")>"
+EA cm|aM|cM
+SE aO|t|20.683
+EA 5|aM|cM
+R aS|x|aT|20.69
+EE t|j|20.69
+EE aK|j|20.69
+SE ck|aK|20.69
+M cN:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.155\")>"
+EA cm|aM|cN
+SE aO|t|20.691
+EA 5|aM|cN
+R aS|x|aT|20.698
+EE t|j|20.698
+EE aK|j|20.698
+SE ck|aK|20.698
+M cO:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.156\")>"
+EA cm|aM|cO
+SE aO|t|20.698
+EA 5|aM|cO
+R aS|x|aT|20.705
+EE t|j|20.706
+EE aK|j|20.706
+SE ck|aK|20.706
+M cP:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.157\")>"
+EA cm|aM|cP
+SE aO|t|20.706
+EA 5|aM|cP
+R aS|x|aT|20.713
+EE t|j|20.713
+EE aK|j|20.713
+SE ck|aK|20.713
+M cQ:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.158\")>"
+EA cm|aM|cQ
+SE aO|t|20.714
+EA 5|aM|cQ
+R aS|x|aT|20.722
+EE t|j|20.722
+EE aK|j|20.722
+SE ck|aK|20.722
+M cR:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.159\")>"
+EA cm|aM|cR
+SE aO|t|20.722
+EA 5|aM|cR
+R aS|x|aT|20.729
+EE t|j|20.73
+EE aK|j|20.73
+SE ck|aK|20.73
+M cS:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.160\")>"
+EA cm|aM|cS
+SE aO|t|20.73
+EA 5|aM|cS
+R aS|x|aT|20.737
+EE t|j|20.737
+EE aK|j|20.737
+SE ck|aK|20.737
+M cT:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.161\")>"
+EA cm|aM|cT
+SE aO|t|20.738
+EA 5|aM|cT
+R aS|x|aT|20.745
+EE t|j|20.745
+EE aK|j|20.745
+SE ck|aK|20.745
+M cU:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.162\")>"
+EA cm|aM|cU
+SE aO|t|20.746
+EA 5|aM|cU
+R aS|x|aT|20.753
+EE t|j|20.753
+EE aK|j|20.753
+SE ck|aK|20.753
+M cV:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.163\")>"
+EA cm|aM|cV
+SE aO|t|20.754
+EA 5|aM|cV
+M cW:"'11 May 2023'"
+R aS|x|cW|20.761
+EE t|j|20.761
+EE aK|j|20.761
+SE ck|aK|20.761
+M cX:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.164\")>"
+EA cm|aM|cX
+SE aO|t|20.761
+EA 5|aM|cX
+M cY:"'01 February 2024'"
+R aS|x|cY|20.768
+EE t|j|20.768
+EE aK|j|20.769
+SE ck|aK|20.769
+M cZ:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.165\")>"
+EA cm|aM|cZ
+SE aO|t|20.769
+EA 5|aM|cZ
+M c0:"'02 February 2024'"
+R aS|x|c0|20.776
+EE t|j|20.776
+EE aK|j|20.776
+SE ck|aK|20.776
+M c1:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.166\")>"
+EA cm|aM|c1
+SE aO|t|20.777
+EA 5|aM|c1
+M c2:"'08 February 2023'"
+R aS|x|c2|20.784
+EE t|j|20.784
+EE aK|j|20.784
+SE ck|aK|20.784
+M c3:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.167\")>"
+EA cm|aM|c3
+SE aO|t|20.784
+EA 5|aM|c3
+M c4:"'18 August 2023'"
+R aS|x|c4|20.791
+EE t|j|20.792
+EE aK|j|20.792
+SE ck|aK|20.792
+M c5:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.168\")>"
+EA cm|aM|c5
+SE aO|t|20.792
+EA 5|aM|c5
+M c6:"'06 September 2023'"
+R aS|x|c6|20.799
+EE t|j|20.799
+EE aK|j|20.799
+SE ck|aK|20.799
+M c7:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.169\")>"
+EA cm|aM|c7
+SE aO|t|20.8
+EA 5|aM|c7
+M c8:"'30 October 2023'"
+R aS|x|c8|20.808
+EE t|j|20.808
+EE aK|j|20.808
+SE ck|aK|20.808
+M c9:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.170\")>"
+EA cm|aM|c9
+SE aO|t|20.809
+EA 5|aM|c9
+M da:"'21 November 2022'"
+R aS|x|da|20.816
+EE t|j|20.816
+EE aK|j|20.816
+SE ck|aK|20.816
+M db:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.171\")>"
+EA cm|aM|db
+SE aO|t|20.817
+EA 5|aM|db
+M dc:"'02 February 2023'"
+R aS|x|dc|20.824
+EE t|j|20.824
+EE aK|j|20.824
+SE ck|aK|20.824
+M dd:"<selenium.webdriver.remote.webelement.WebElement (session=\"848ecb4a9297e70fb333a9299cb109f6\", element=\"f.A2F1CDAFFFB1F80C6C1BFD61EEA6FDF5.d.AAE262495970D79A289713D01EB837E6.e.172\")>"
+EA cm|aM|dd
+SE aO|t|20.825
+EA 5|aM|dd
+M de:"'18 December 2022'"
+R aS|x|de|20.831
+EE t|j|20.832
+EE aK|j|20.832
+EE aH|j|20.832
+P df:aA|m|n|e|113
+M dg:"{'Title:': ['', '', '', '', '', 'Trinity International Bible University bogus - Higher Education Dept', 'WATCH | Discussion | Celebrating Earth Day', \"WATCH | PSA comments on govt's salary expenditure\", 'WATCH | Meyiwa trial continues', 'Lesufi hopes for sole mandate in Gauteng ahead of elections', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Finnish footbridge collapse injures 27, mostly children', \"Injured North out of Wales' Six Nations opener against Scotland\", 'Three dead, over 270 injured in huge fire in Nairobi', 'Bus crashes into Montreal day care, seriously injuring children', 'Frizell joins injured list as All Blacks depart for Rugby World Cup', 'Australia include injured quartet in ODI World Cup squad', 'Injured Springbok Marx to miss Japanese club season', 'More than 40 dead, hundreds injured in Indonesia quake', 'PSG lose injured Mbappe for first leg of Bayern Champions League tie', 'Seven killed, several injured in KZN crash'], 'Description:': ['Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...', 'Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...', '', '', 'A bus crashed into a Montreal daycare center on Wednesday.', 'A bus crashed into a Montreal daycare center on Wednesday.', '', '', '', \"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\", \"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\", \"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\", \"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\", 'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.', 'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.'], 'Date:': ['', '', '', '', '', '. ago', '9 minutes ago', '18 minutes ago', '6 hours ago', '8 hours ago', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '11 May 2023', '01 February 2024', '02 February 2024', '08 February 2023', '18 August 2023', '06 September 2023', '30 October 2023', '21 November 2022', '02 February 2023', '18 December 2022'], 'No of search phrases in title:': [], 'No of search phrases in Description:': [], 'Money:': []}"
+R df|Q|dg|20.832
+EE t|j|20.832
+M di:"Robot_exe.clean_data"
+P dh:di|m|n|e|115
+SE dh|t|20.832
+M dk:"for (keys, values) in self.news.items()"
+P dj:dk|m|n|e|118
+SE dj|aH|20.832
+M dm:"Step: for (keys, values) in self.news.items()"
+P dl:dm|m|n|e|118
+SE dl|aK|20.833
+M dn:"keys"
+M do:"'Title:'"
+EA dn|x|do
+M dp:"values"
+M dq:"['', '', '', '', '', 'Trinity International Bible University bogus - Higher Education Dept', 'WATCH | Discussion | Celebrating Earth Day', \"WATCH | PSA comments on govt's salary expenditure\", 'WATCH | Meyiwa trial continues', 'Lesufi hopes for sole mandate in Gauteng ahead of elections', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Finnish footbridge collapse injures 27, mostly children', \"Injured North out of Wales' Six Nations opener against Scotland\", 'Three dead, over 270 injured in huge fire in Nairobi', 'Bus crashes into Montreal day care, seriously injuring children', 'Frizell joins injured list as All Blacks depart for Rugby World Cup', 'Australia include injured quartet in ODI World Cup squad', 'Injured Springbok Marx to miss Japanese club season', 'More than 40 dead, hundreds injured in Indonesia quake', 'PSG lose injured Mbappe for first leg of Bayern Champions League tie', 'Seven killed, several injured in KZN crash']"
+EA dp|as|dq
+M ds:"if isinstance(values, list)"
+P dr:ds|m|n|e|120
+SE dr|aw|20.833
+M dt:"isinstance"
+M du:"builtin_function_or_method"
+M dv:"<built-in function isinstance>"
+EA dt|du|dv
+EA dp|as|dq
+M dw:"type"
+M dx:"<class 'list'>"
+EA as|dw|dx
+EE aw|j|20.834
+EE aK|j|20.834
+SE dl|aK|20.834
+M dy:"'Description:'"
+EA dn|x|dy
+M dz:"['Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...', 'Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...', '', '', 'A bus crashed into a Montreal daycare center on Wednesday.', 'A bus crashed into a Montreal daycare center on Wednesday.', '', '', '', \"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\", \"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\", \"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\", \"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\", 'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.', 'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.']"
+EA dp|as|dz
+SE dr|aw|20.835
+EA dt|du|dv
+EA dp|as|dz
+EA as|dw|dx
+EE aw|j|20.835
+EE aK|j|20.835
+SE dl|aK|20.835
+M dA:"'Date:'"
+EA dn|x|dA
+M dB:"['', '', '', '', '', '. ago', '9 minutes ago', '18 minutes ago', '6 hours ago', '8 hours ago', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '11 May 2023', '01 February 2024', '02 February 2024', '08 February 2023', '18 August 2023', '06 September 2023', '30 October 2023', '21 November 2022', '02 February 2023', '18 December 2022']"
+EA dp|as|dB
+SE dr|aw|20.836
+EA dt|du|dv
+EA dp|as|dB
+EA as|dw|dx
+EE aw|j|20.836
+EE aK|j|20.836
+SE dl|aK|20.837
+M dC:"'No of search phrases in title:'"
+EA dn|x|dC
+EA dp|as|at
+SE dr|aw|20.837
+EA dt|du|dv
+EA dp|as|at
+EA as|dw|dx
+EE aw|j|20.837
+EE aK|j|20.837
+SE dl|aK|20.838
+M dD:"'No of search phrases in Description:'"
+EA dn|x|dD
+EA dp|as|at
+SE dr|aw|20.838
+EA dt|du|dv
+EA dp|as|at
+EA as|dw|dx
+EE aw|j|20.838
+EE aK|j|20.839
+SE dl|aK|20.839
+M dE:"'Money:'"
+EA dn|x|dE
+EA dp|as|at
+SE dr|aw|20.839
+EA dt|du|dv
+EA dp|as|at
+EA as|dw|dx
+EE aw|j|20.839
+EE aK|j|20.84
+EE aH|j|20.84
+P dF:di|m|n|e|124
+M dG:"{'Title:': ['Trinity International Bible University bogus - Higher Education Dept', 'WATCH | Discussion | Celebrating Earth Day', \"WATCH | PSA comments on govt's salary expenditure\", 'WATCH | Meyiwa trial continues', 'Lesufi hopes for sole mandate in Gauteng ahead of elections', 'Finnish footbridge collapse injures 27, mostly children', \"Injured North out of Wales' Six Nations opener against Scotland\", 'Three dead, over 270 injured in huge fire in Nairobi', 'Bus crashes into Montreal day care, seriously injuring children', 'Frizell joins injured list as All Blacks depart for Rugby World Cup', 'Australia include injured quartet in ODI World Cup squad', 'Injured Springbok Marx to miss Japanese club season', 'More than 40 dead, hundreds injured in Indonesia quake', 'PSG lose injured Mbappe for first leg of Bayern Champions League tie', 'Seven killed, several injured in KZN crash'], 'Description:': ['Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...', 'Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...', 'A bus crashed into a Montreal daycare center on Wednesday.', 'A bus crashed into a Montreal daycare center on Wednesday.', \"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\", \"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\", \"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\", \"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\", 'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.', 'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.'], 'Date:': ['. ago', '9 minutes ago', '18 minutes ago', '6 hours ago', '8 hours ago', '11 May 2023', '01 February 2024', '02 February 2024', '08 February 2023', '18 August 2023', '06 September 2023', '30 October 2023', '21 November 2022', '02 February 2023', '18 December 2022'], 'No of search phrases in title:': [], 'No of search phrases in Description:': [], 'Money:': []}"
+R dF|Q|dG|20.84
+EE t|j|20.84
+M dI:"Robot_exe.look_up_phrase_and_money"
+P dH:dI|m|n|e|128
+SE dH|t|20.84
+M dK:"for t in range(len(self.news['Title:']))"
+P dJ:dK|m|n|e|131
+SE dJ|aH|20.84
+M dM:"Step: for t in range(len(self.news['Title:']))"
+P dL:dM|m|n|e|131
+SE dL|aK|20.841
+M dN:"t"
+M dO:"0"
+EA dN|Y|dO
+P dP:dI|m|n|e|133
+M dQ:"title"
+AS dP|dQ|x|aZ|20.841
+P dR:dI|m|n|e|135
+M dS:"title_count"
+AS dR|dS|Y|dO|20.841
+EE aK|j|20.842
+SE dL|aK|20.842
+EA dN|Y|Z
+AS dP|dQ|x|a1|20.842
+AS dR|dS|Y|dO|20.842
+EE aK|j|20.842
+SE dL|aK|20.842
+EA dN|Y|ay
+AS dP|dQ|x|a3|20.843
+AS dR|dS|Y|dO|20.843
+EE aK|j|20.843
+SE dL|aK|20.843
+M dT:"3"
+EA dN|Y|dT
+AS dP|dQ|x|a5|20.843
+AS dR|dS|Y|dO|20.844
+EE aK|j|20.844
+SE dL|aK|20.844
+EA dN|Y|8
+AS dP|dQ|x|a7|20.844
+AS dR|dS|Y|dO|20.844
+EE aK|j|20.844
+SE dL|aK|20.845
+M dU:"5"
+EA dN|Y|dU
+AS dP|dQ|x|bs|20.845
+AS dR|dS|Y|dO|20.845
+EE aK|j|20.845
+SE dL|aK|20.845
+M dV:"6"
+EA dN|Y|dV
+AS dP|dQ|x|bu|20.846
+AS dR|dS|Y|Z|20.846
+EE aK|j|20.846
+SE dL|aK|20.846
+M dW:"7"
+EA dN|Y|dW
+AS dP|dQ|x|bw|20.846
+AS dR|dS|Y|Z|20.847
+EE aK|j|20.847
+SE dL|aK|20.847
+M dX:"8"
+EA dN|Y|dX
+AS dP|dQ|x|by|20.847
+AS dR|dS|Y|dO|20.847
+EE aK|j|20.847
+SE dL|aK|20.848
+M dY:"9"
+EA dN|Y|dY
+AS dP|dQ|x|bA|20.848
+AS dR|dS|Y|Z|20.848
+EE aK|j|20.848
+SE dL|aK|20.848
+M dZ:"10"
+EA dN|Y|dZ
+AS dP|dQ|x|bC|20.849
+AS dR|dS|Y|Z|20.849
+EE aK|j|20.849
+SE dL|aK|20.849
+M d0:"11"
+EA dN|Y|d0
+AS dP|dQ|x|bE|20.85
+AS dR|dS|Y|Z|20.85
+EE aK|j|20.85
+SE dL|aK|20.85
+M d1:"12"
+EA dN|Y|d1
+AS dP|dQ|x|bG|20.85
+AS dR|dS|Y|Z|20.851
+EE aK|j|20.851
+SE dL|aK|20.851
+M d2:"13"
+EA dN|Y|d2
+AS dP|dQ|x|bI|20.851
+AS dR|dS|Y|Z|20.851
+EE aK|j|20.851
+SE dL|aK|20.851
+M d3:"14"
+EA dN|Y|d3
+AS dP|dQ|x|bK|20.852
+AS dR|dS|Y|Z|20.852
+EE aK|j|20.852
+EE aH|j|20.852
+M d5:"for n in range(len(self.news['Description:']))"
+P d4:d5|m|n|e|144
+SE d4|aH|20.852
+M d7:"Step: for n in range(len(self.news['Description:']))"
+P d6:d7|m|n|e|144
+SE d6|aK|20.852
+M d8:"n"
+EA d8|Y|dO
+P d9:dI|m|n|e|146
+AS d9|bT|x|bV|20.853
+P ea:dI|m|n|e|148
+M eb:"description_count"
+AS ea|eb|Y|Z|20.853
+EE aK|j|20.854
+SE d6|aK|20.854
+EA d8|Y|Z
+AS d9|bT|x|bV|20.854
+AS ea|eb|Y|Z|20.854
+EE aK|j|20.854
+SE d6|aK|20.854
+EA d8|Y|ay
+AS d9|bT|x|b0|20.855
+AS ea|eb|Y|dO|20.855
+EE aK|j|20.855
+SE d6|aK|20.855
+EA d8|Y|dT
+AS d9|bT|x|b0|20.855
+AS ea|eb|Y|dO|20.856
+EE aK|j|20.856
+SE d6|aK|20.856
+EA d8|Y|8
+AS d9|bT|x|b6|20.856
+AS ea|eb|Y|Z|20.856
+EE aK|j|20.856
+SE d6|aK|20.856
+EA d8|Y|dU
+AS d9|bT|x|b6|20.857
+AS ea|eb|Y|Z|20.857
+EE aK|j|20.857
+SE d6|aK|20.857
+EA d8|Y|dV
+AS d9|bT|x|b9|20.857
+AS ea|eb|Y|dO|20.857
+EE aK|j|20.858
+SE d6|aK|20.858
+EA d8|Y|dW
+AS d9|bT|x|b9|20.858
+AS ea|eb|Y|dO|20.858
+EE aK|j|20.858
+SE d6|aK|20.858
+EA d8|Y|dX
+AS d9|bT|x|cc|20.858
+AS ea|eb|Y|Z|20.858
+EE aK|j|20.858
+SE d6|aK|20.858
+EA d8|Y|dY
+AS d9|bT|x|cc|20.858
+AS ea|eb|Y|Z|20.858
+EE aK|j|20.858
+EE aH|j|20.858
+M ed:"for check_money in self.news['Title:']"
+P ec:ed|m|n|e|158
+SE ec|aH|20.859
+M ef:"Step: for check_money in self.news['Title:']"
+P ee:ef|m|n|e|158
+SE ee|aK|20.859
+M eg:"check_money"
+EA eg|x|aZ
+P eh:dI|m|n|e|160
+M ei:"found_match"
+M ej:"False"
+AS eh|ei|aj|ej|20.86
+EE aK|j|20.86
+SE ee|aK|20.86
+EA eg|x|a1
+AS eh|ei|aj|ej|20.861
+EE aK|j|20.861
+SE ee|aK|20.861
+EA eg|x|a3
+AS eh|ei|aj|ej|20.861
+EE aK|j|20.861
+SE ee|aK|20.862
+EA eg|x|a5
+AS eh|ei|aj|ej|20.862
+EE aK|j|20.862
+SE ee|aK|20.862
+EA eg|x|a7
+AS eh|ei|aj|ej|20.862
+EE aK|j|20.862
+SE ee|aK|20.862
+EA eg|x|bs
+AS eh|ei|aj|ej|20.863
+EE aK|j|20.863
+SE ee|aK|20.863
+EA eg|x|bu
+AS eh|ei|aj|ej|20.863
+EE aK|j|20.863
+SE ee|aK|20.863
+EA eg|x|bw
+AS eh|ei|aj|ej|20.864
+EE aK|j|20.864
+SE ee|aK|20.864
+EA eg|x|by
+AS eh|ei|aj|ej|20.864
+EE aK|j|20.864
+SE ee|aK|20.864
+EA eg|x|bA
+AS eh|ei|aj|ej|20.864
+EE aK|j|20.864
+SE ee|aK|20.864
+EA eg|x|bC
+AS eh|ei|aj|ej|20.864
+EE aK|j|20.864
+SE ee|aK|20.864
+EA eg|x|bE
+AS eh|ei|aj|ej|20.865
+EE aK|j|20.865
+SE ee|aK|20.865
+EA eg|x|bG
+AS eh|ei|aj|ej|20.865
+EE aK|j|20.865
+SE ee|aK|20.866
+EA eg|x|bI
+AS eh|ei|aj|ej|20.866
+EE aK|j|20.866
+SE ee|aK|20.866
+EA eg|x|bK
+AS eh|ei|aj|ej|20.866
+EE aK|j|20.866
+EE aH|j|20.866
+P ek:dI|m|n|e|167
+M el:"{'Title:': ['Trinity International Bible University bogus - Higher Education Dept', 'WATCH | Discussion | Celebrating Earth Day', \"WATCH | PSA comments on govt's salary expenditure\", 'WATCH | Meyiwa trial continues', 'Lesufi hopes for sole mandate in Gauteng ahead of elections', 'Finnish footbridge collapse injures 27, mostly children', \"Injured North out of Wales' Six Nations opener against Scotland\", 'Three dead, over 270 injured in huge fire in Nairobi', 'Bus crashes into Montreal day care, seriously injuring children', 'Frizell joins injured list as All Blacks depart for Rugby World Cup', 'Australia include injured quartet in ODI World Cup squad', 'Injured Springbok Marx to miss Japanese club season', 'More than 40 dead, hundreds injured in Indonesia quake', 'PSG lose injured Mbappe for first leg of Bayern Champions League tie', 'Seven killed, several injured in KZN crash'], 'Description:': ['Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...', 'Some 27 young people, mostly children, were injured in Finland on Thursday when they fell five metres onto a road after a temporary footbridge near...', 'A bus crashed into a Montreal daycare center on Wednesday.', 'A bus crashed into a Montreal daycare center on Wednesday.', \"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\", \"At least 46 people have been killed and 700 injured in an earthquake that rattled Indonesia's main island of Java on Monday.\", \"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\", \"The France star was hurt during the first half of Wednesday's 3-1 win at Montpellier in Ligue 1 having earlier had two penalties saved.\", 'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.', 'Seven people were killed and five others injured in a horrific road accident on the N3 near Bergville.'], 'Date:': ['. ago', '9 minutes ago', '18 minutes ago', '6 hours ago', '8 hours ago', '11 May 2023', '01 February 2024', '02 February 2024', '08 February 2023', '18 August 2023', '06 September 2023', '30 October 2023', '21 November 2022', '02 February 2023', '18 December 2022'], 'No of search phrases in title:': [0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1], 'No of search phrases in Description:': [1, 1, 0, 0, 1, 1, 0, 0, 1, 1], 'Money:': [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]}"
+R ek|Q|el|20.867
+EE t|j|20.867
+M en:"Robot_exe.save_excel"
+P em:en|m|n|e|170
+SE em|t|20.867
+M ep:"Files.__init__"
+M eq:"RPA.Excel.Files"
+M er:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/RPA/Excel/Files.py"
+P eo:ep|eq|er|e|180
+SE eo|t|20.867
+EE t|j|20.868
+P es:en|m|n|e|171
+M et:"excel"
+M eu:"Files"
+M ev:"<RPA.Excel.Files.Files object at 0x101fab100>"
+AS es|et|eu|ev|20.868
+M ex:"Files.create_workbook"
+P ew:ex|eq|er|e|220
+SE ew|t|20.868
+M ey:"path"
+EA ey|aa|ab
+M ez:"fmt"
+M eA:"'xlsx'"
+EA ez|x|eA
+M eB:"sheet_name"
+EA eB|aa|ab
+P eC:ex|eq|er|e|308
+M eD:"XlsxWorkbook"
+M eE:"<RPA.Excel.Files.XlsxWorkbook object at 0x102272ec0>"
+R eC|eD|eE|20.874
+EE t|j|20.875
+P eF:en|m|n|e|172
+M eG:"wb"
+AS eF|eG|eD|eE|20.875
+M eI:"XlsxWorkbook.create_worksheet"
+P eH:eI|eq|er|e|1876
+SE eH|t|20.875
+M eJ:"name"
+M eK:"'Results'"
+EA eJ|x|eK
+EE t|j|20.876
+M eM:"Files.append_rows_to_worksheet"
+P eL:eM|eq|er|e|715
+SE eL|t|20.877
+M eN:"content"
+EA eN|Q|el
+EA eJ|x|eK
+M eO:"header"
+EA eO|aj|ak
+M eP:"start"
+EA eP|aa|ab
+M eQ:"formatting_as_empty"
+EA eQ|aj|ej
+P eR:eM|eq|er|e|786
+R eR|aa|ab|20.881
+EE t|j|20.881
+M eT:"XlsxWorkbook.save"
+P eS:eT|eq|er|e|1869
+SE eS|t|20.881
+M eU:"'/Users/deemthedev/Desktop/myFiles/Python/PROJECTS/eNCA-WEB-SPIDER/eNCA-RPA-Web-Crawler/output/results.xlsx'"
+EA ey|x|eU
+EE t|j|20.911
+EE t|j|20.911
+EE t|j|20.912
+C r|l|20.912
+M eV:" status: "
+C f|eV|20.912
+M eW:"PASS\n"
+C f|eW|20.913
+M eX:"================================================================================\n"
+C f|eX|20.913
+ET j|e|20.913
+M eZ:"Teardown tasks"
+M e0:"teardown"
+P eY:eZ|e0|e|e|0
+ST eY|20.913
+M e1:"Process snapshot"
+SPS e1|20.914
+M e2:"System information:\nMemory: Total: 8.0 G, Available: 2.4 G, Used: 69.7 %\nCPUs: 4"
+P e3:e|e|e|e|0
+L I|e2|e3|0|21.052
+M e4:"Subprocess: Google Chrome Helper (Renderer) (pid: 12650, status: running)\nCommand Line: /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/124.0.6367.61/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --user-data-dir=/var/folders/cp/s1jnjblj37jblg4sz67gvd5h0000gn/T/.org.chromium.Chromium.Crt1Jh --no-sandbox --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --lang=en-GB --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=14 --time-ticks-at-unix-epoch=-1713631207188283 --launch-time-ticks=184317450157 --shared-files --field-trial-handle=1718379636,r,17710784601400958855,2675259686760659107,262144 --variations-seed-version --log-level=0\nStarted: 21:52:04\nParent pid: 12599\nResident Set Size: 37.5 M\nVirtual Memory Size: 1.1 T"
+L I|e4|e3|0|21.071
+M e5:"OutputToPortThread|Thread ID: 123145511530496 (daemon)"
+STD e5|21.071
+M e6:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/threading.py"
+M e7:"_bootstrap"
+M e8:"self._bootstrap_inner()"
+TBE e6|973|e7|e8
+M e9:"self"
+M fa:"Thread"
+M fb:"<Thread(OutputToPortThread, started daemon 123145511530496)>"
+TBV e9|fa|fb
+M fc:"_bootstrap_inner"
+M fd:"self.run()"
+TBE e6|1016|fc|fd
+TBV e9|fa|fb
+M fe:"self._target(*self._args, **self._kwargs)"
+TBE e6|953|A|fe
+TBV e9|fa|fb
+M ff:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/tasks/_log_output_setup.py"
+M fg:"write_in_thread"
+M fh:"msg = q.get()"
+TBE ff|73|fg|fh
+M fi:"msg"
+M fj:"'ST eY|20.905\\n'"
+TBV fi|x|fj
+M fk:"client_socket"
+M fl:"socket"
+M fm:"<socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 60737), raddr=('127.0.0.1', 60712)>"
+TBV fk|fl|fm
+M fn:"log"
+M fo:"module"
+M fp:"<module 'robocorp.log' from '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/__init__.py'>"
+TBV fn|fo|fp
+M fq:"port_in_env"
+M fr:"'60712'"
+TBV fq|x|fr
+M fs:"q"
+M ft:"Queue"
+M fu:"<queue.Queue object at 0x1025af940>"
+TBV fs|ft|fu
+M fv:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/queue.py"
+M fw:"get"
+M fx:"self.not_empty.wait()"
+TBE fv|171|fw|fx
+TBV e9|ft|fu
+M fy:"block"
+TBV fy|aj|ak
+TBV 7|aa|ab
+M fz:"wait"
+M fA:"waiter.acquire()"
+TBE e6|320|fz|fA
+M fB:"Condition"
+M fC:"<Condition(<unlocked _thread.lock object at 0x10271d780>, 1)>"
+TBV e9|fB|fC
+TBV 7|aa|ab
+M fD:"waiter"
+M fE:"lock"
+M fF:"<locked _thread.lock object at 0x1030c4b80>"
+TBV fD|fE|fF
+M fG:"saved_state"
+TBV fG|aa|ab
+M fH:"gotit"
+TBV fH|aj|ej
+ETD 21.078
+M fI:"MainThread|Thread ID: 4484072960 (non daemon)"
+STD fI|21.078
+M fJ:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/__init__.py"
+M fK:"process_snapshot"
+M fL:"robo_logger.process_snapshot()"
+TBE fJ|270|fK|fL
+M fM:"logger_instances"
+M fN:"{<robocorp.log._robo_logger._RoboLogger object at 0x102070160>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x1025ad1e0>: 1}"
+TBV fM|Q|fN
+M fO:"robo_logger"
+M fP:"_RoboLogger"
+M fQ:"<robocorp.log._robo_logger._RoboLogger object at 0x102070160>"
+TBV fO|fP|fQ
+M fR:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/_robo_logger.py"
+M fS:"new_func"
+M fT:"return func(self, *args, **kwargs)"
+TBE fR|20|fS|fT
+TBV e9|fP|fQ
+TBV M|N|O
+TBV P|Q|R
+M fU:"func"
+M fV:"function"
+M fW:"<function _RoboLogger.process_snapshot at 0x102888700>"
+TBV fU|fV|fW
+M fX:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE fR|416|fK|fX
+TBV e9|fP|fQ
+M fY:"hide_vars"
+TBV fY|aj|ej
+M fZ:"/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py"
+M f0:"self._dump_threads(hide_vars)"
+TBE fZ|748|fK|f0
+TBV fY|aj|ej
+TBV fn|fo|fp
+M f1:"entry_id"
+M f2:"'ps_0'"
+TBV f1|x|f2
+M f3:"entry_type"
+M f4:"'process_snapshot'"
+TBV f3|x|f4
+M f5:"psutil"
+M f6:"<module 'psutil' from '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/psutil/__init__.py'>"
+TBV f5|fo|f6
+M f7:"AccessDenied"
+M f8:"<class 'psutil.AccessDenied'>"
+TBV f7|dw|f8
+M f9:"NoSuchProcess"
+M ga:"<class 'psutil.NoSuchProcess'>"
+TBV f9|dw|ga
+M gb:"ZombieProcess"
+M gc:"<class 'psutil.ZombieProcess'>"
+TBV gb|dw|gc
+M gd:"curr_process"
+M ge:"Process"
+M gf:"psutil.Process(pid=12544, name='python3.10', status='running', started='21:51:46')"
+TBV gd|ge|gf
+M gg:"log_info"
+M gh:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x105ad9bd0>"
+TBV gg|fV|gh
+M gi:"memory_info"
+M gj:"'Total: 8.0 G, Available: 2.4 G, Used: 69.7 %'"
+TBV gi|x|gj
+M gk:"child_i"
+TBV gk|Y|d0
+M gl:"child"
+M gm:"psutil.Process(pid=12650, name='Google Chrome Helper (Renderer)', status='running', started='21:52:04')"
+TBV gl|ge|gm
+M gn:"'Google Chrome Helper (Renderer)'"
+TBV eJ|x|gn
+M go:"status"
+M gp:"'running'"
+TBV go|x|gp
+M gq:"create_time"
+M gr:"'21:52:04'"
+TBV gq|x|gr
+M gs:"ppid"
+M gt:"'12599'"
+TBV gs|x|gt
+M gu:"cmdline"
+M gv:"'/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/124.0.6367.61/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --user-data-dir=/var/folders/cp/s1jnjblj37jblg4sz67gvd5h0000gn/T/.org.chromium.Chromium.Crt1Jh --no-sandbox --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --lang=en-GB --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=14 --time-ticks-at-unix-epoch=-1713631207188283 --launch-time-ticks=184317450157 --shared-files --field-trial-handle=1718379636,r,17710784601400958855,2675259686760659107,262144 --variations-seed-version --log-level=0'"
+TBV gu|x|gv
+M gw:"rss"
+M gx:"'37.5 M'"
+TBV gw|x|gx
+M gy:"vms"
+M gz:"'1.1 T'"
+TBV gy|x|gz
+M gA:"proc_memory_info"
+M gB:"pmem"
+M gC:"pmem(rss=39280640, vms=1249819496448, pfaults=12120, pageins=0)"
+TBV gA|gB|gC
+M gD:"message"
+M gE:"'Subprocess: Google Chrome Helper (Renderer) (pid: 12650, status: running)\\nCommand Line: /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/124.0.6367.61/Helpers/Google Chrome Helper (Renderer).app/Contents/MacOS/Google Chrome Helper (Renderer) --type=renderer --user-data-dir=/var/folders/cp/s1jnjblj37jblg4sz67gvd5h0000gn/T/.org.chromium.Chromium.Crt1Jh --no-sandbox --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --lang=en-GB --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=14 --time-ticks-at-unix-epoch=-1713631207188283 --launch-time-ticks=184317450157 --shared-files --field-trial-handle=1718379636,r,17710784601400958855,2675259686760659107,262144 --variations-seed-version --log-level=0\\nStarted: 21:52:04\\nParent pid: 12599\\nResident Set Size: 37.5 M\\nVirtual Memory Size: 1.1 T'"
+TBV gD|x|gE
+M gF:"_RoboOutputImpl"
+M gG:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x101ecd540>"
+TBV e9|gF|gG
+M gH:"_dump_threads"
+M gI:"stack.append((f, f.f_lineno))"
+TBE fZ|769|gH|gI
+TBV e9|gF|gG
+TBV fY|aj|ej
+M gJ:"thread_id"
+M gK:"4484072960"
+TBV gJ|Y|gK
+M gL:"frame"
+M gM:"<frame at 0x105a45440, file '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 773, code _dump_threads>"
+TBV gL|gL|gM
+M gN:"thread"
+M gO:"_MainThread"
+M gP:"<_MainThread(MainThread, started 4484072960)>"
+TBV gN|gO|gP
+M gQ:"'MainThread|Thread ID: 4484072960 (non daemon)'"
+TBV dQ|x|gQ
+M gR:"f"
+M gS:"<frame at 0x7fb50802c010, file '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/tasks/_commands.py', line 480, code run>"
+TBV gR|gL|gS
+M gT:"stack"
+M gU:"[(<frame at 0x105a32480, file '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x1022e7240, file '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x105a74860, file '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x7fb508ceed50, file '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x105a45440, file '/Users/Shared/robocorp/ht/a6c209d_b1f3c24_1c0bc041/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV gT|as|gU
+ETD 21.096
+EPS 21.096
+ET j|e|21.123
+ER j|21.123
